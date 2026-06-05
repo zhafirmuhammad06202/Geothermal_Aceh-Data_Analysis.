@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4012607131f9e7c4c7305a4da9b00912 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4012607131f9e7c4c7305a4da9b00912" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4012607131f9e7c4c7305a4da9b00912 = L.map(
+                "map_4012607131f9e7c4c7305a4da9b00912",
+                {
+                    center: [5.2, 96.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9e8aa4494b637eb0c993103265cfd2fa = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9e8aa4494b637eb0c993103265cfd2fa.addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var marker_47f6581f3e8e9fddbc57ebc08cf4c94a = L.marker(
+                [5.448, 95.658],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var icon_b6a4b05590d7bce77f4a58e3779b8a11 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e7ed6a5e28e77633cc4198eda7dfdba4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8153f459565b655786ddbf562b066c9 = $(`<div id="html_a8153f459565b655786ddbf562b066c9" style="width: 100.0%; height: 100.0%;"><b>Seulawah Agam</b><br>Suhu: 98°C<br>pH: 2.5</div>`)[0];
+                popup_e7ed6a5e28e77633cc4198eda7dfdba4.setContent(html_a8153f459565b655786ddbf562b066c9);
+            
+        
+
+        marker_47f6581f3e8e9fddbc57ebc08cf4c94a.bindPopup(popup_e7ed6a5e28e77633cc4198eda7dfdba4)
+        ;
+
+        
+    
+    
+                marker_47f6581f3e8e9fddbc57ebc08cf4c94a.setIcon(icon_b6a4b05590d7bce77f4a58e3779b8a11);
+            
+    
+            var marker_f1cf461fa7074084b6546ef8e809042b = L.marker(
+                [5.815, 95.332],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var icon_af288726794f28fc5a2d8045ca090e16 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e3ff94cbf1b6292130898ada52d7409 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e75d2df448545dc80d7eb1a4c3a7667a = $(`<div id="html_e75d2df448545dc80d7eb1a4c3a7667a" style="width: 100.0%; height: 100.0%;"><b>Jaboi Sabang</b><br>Suhu: 105°C<br>pH: 3.2</div>`)[0];
+                popup_8e3ff94cbf1b6292130898ada52d7409.setContent(html_e75d2df448545dc80d7eb1a4c3a7667a);
+            
+        
+
+        marker_f1cf461fa7074084b6546ef8e809042b.bindPopup(popup_8e3ff94cbf1b6292130898ada52d7409)
+        ;
+
+        
+    
+    
+                marker_f1cf461fa7074084b6546ef8e809042b.setIcon(icon_af288726794f28fc5a2d8045ca090e16);
+            
+    
+            var marker_e37e85c9261aa38b7d8f90b5e283fcba = L.marker(
+                [5.545, 95.542],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var icon_07889f1d6a7e4cef50757611dbe20d6e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33ec0e541f4c1fad6b86a7e964946cf9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bdff34bc98592839b90342d7f733dbe3 = $(`<div id="html_bdff34bc98592839b90342d7f733dbe3" style="width: 100.0%; height: 100.0%;"><b>Ie Seu-um</b><br>Suhu: 85°C<br>pH: 7.5</div>`)[0];
+                popup_33ec0e541f4c1fad6b86a7e964946cf9.setContent(html_bdff34bc98592839b90342d7f733dbe3);
+            
+        
+
+        marker_e37e85c9261aa38b7d8f90b5e283fcba.bindPopup(popup_33ec0e541f4c1fad6b86a7e964946cf9)
+        ;
+
+        
+    
+    
+                marker_e37e85c9261aa38b7d8f90b5e283fcba.setIcon(icon_07889f1d6a7e4cef50757611dbe20d6e);
+            
+    
+            var marker_18ce0a860bc10f4d2c782a118ce1d36e = L.marker(
+                [5.612, 95.125],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var icon_0d71baf5cb202bdcf8527c81f7ebcb69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_980e56ac0b0517d66ffcda3e6fac0afa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9de2a3cd31220f1edaf6eafb04aa9e9 = $(`<div id="html_e9de2a3cd31220f1edaf6eafb04aa9e9" style="width: 100.0%; height: 100.0%;"><b>Pulo Aceh</b><br>Suhu: 45°C<br>pH: 8.1</div>`)[0];
+                popup_980e56ac0b0517d66ffcda3e6fac0afa.setContent(html_e9de2a3cd31220f1edaf6eafb04aa9e9);
+            
+        
+
+        marker_18ce0a860bc10f4d2c782a118ce1d36e.bindPopup(popup_980e56ac0b0517d66ffcda3e6fac0afa)
+        ;
+
+        
+    
+    
+                marker_18ce0a860bc10f4d2c782a118ce1d36e.setIcon(icon_0d71baf5cb202bdcf8527c81f7ebcb69);
+            
+    
+            var marker_af71992152d612898364ae9508bc2266 = L.marker(
+                [3.965, 97.352],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var icon_f0ce67a0ca270ec9135651d1014cacf2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d12cf38060e32d880819af7d007bacc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c65faec1a99a3ca9fde7884b36036382 = $(`<div id="html_c65faec1a99a3ca9fde7884b36036382" style="width: 100.0%; height: 100.0%;"><b>Gayo Lues</b><br>Suhu: 92°C<br>pH: 6.8</div>`)[0];
+                popup_9d12cf38060e32d880819af7d007bacc.setContent(html_c65faec1a99a3ca9fde7884b36036382);
+            
+        
+
+        marker_af71992152d612898364ae9508bc2266.bindPopup(popup_9d12cf38060e32d880819af7d007bacc)
+        ;
+
+        
+    
+    
+                marker_af71992152d612898364ae9508bc2266.setIcon(icon_f0ce67a0ca270ec9135651d1014cacf2);
+            
+    
+            var marker_3ed37c96ed34e3ec622c5b1b705dacdd = L.marker(
+                [4.725, 96.852],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var icon_ce6a4373a41415b1216390d47c16320a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_558c02b9848adeda9ab00de5e6fcf90d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b1e5a0330dbd1c19bb1a8b5ea609fff = $(`<div id="html_5b1e5a0330dbd1c19bb1a8b5ea609fff" style="width: 100.0%; height: 100.0%;"><b>Bener Meriah</b><br>Suhu: 88°C<br>pH: 5.5</div>`)[0];
+                popup_558c02b9848adeda9ab00de5e6fcf90d.setContent(html_5b1e5a0330dbd1c19bb1a8b5ea609fff);
+            
+        
+
+        marker_3ed37c96ed34e3ec622c5b1b705dacdd.bindPopup(popup_558c02b9848adeda9ab00de5e6fcf90d)
+        ;
+
+        
+    
+    
+                marker_3ed37c96ed34e3ec622c5b1b705dacdd.setIcon(icon_ce6a4373a41415b1216390d47c16320a);
+            
+    
+            var marker_86db9b1895e5707f8a2538a69cc62342 = L.marker(
+                [5.548, 95.323],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_531408567457dabc737cb338e2ff5ef0 = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003eBanda Aceh\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_86db9b1895e5707f8a2538a69cc62342.setIcon(div_icon_531408567457dabc737cb338e2ff5ef0);
+            
+    
+            var marker_c53b4a4d535c7fa2e6ecbebe7f478a88 = L.marker(
+                [5.432, 95.631],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_dc447be3f8bbf0c47eba272330e01b49 = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003eAceh Besar\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_c53b4a4d535c7fa2e6ecbebe7f478a88.setIcon(div_icon_dc447be3f8bbf0c47eba272330e01b49);
+            
+    
+            var marker_36ba6cf1167ef1a1ec3fbdcbe7c6ae62 = L.marker(
+                [5.893, 95.319],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_6754fcd01321a517da8539e60f59d9cf = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003eSabang\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_36ba6cf1167ef1a1ec3fbdcbe7c6ae62.setIcon(div_icon_6754fcd01321a517da8539e60f59d9cf);
+            
+    
+            var marker_e0c58d83277b49ac1d859e4791fcf283 = L.marker(
+                [4.93, 96.008],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_e09e62f68031592be7e545e6966122fa = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003ePidie\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_e0c58d83277b49ac1d859e4791fcf283.setIcon(div_icon_e09e62f68031592be7e545e6966122fa);
+            
+    
+            var marker_70506b93fe7b3b1cf33d2f5bb83a23ac = L.marker(
+                [5.204, 96.697],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_c252b49a7696201c450b0abb33d99301 = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003eBireuen\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_70506b93fe7b3b1cf33d2f5bb83a23ac.setIcon(div_icon_c252b49a7696201c450b0abb33d99301);
+            
+    
+            var marker_f3858c4072a81e5754f397c2eedde1b3 = L.marker(
+                [5.18, 97.15],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_b7efce4109be4d12bfbe0df5dc53c923 = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003eLhokseumawe\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_f3858c4072a81e5754f397c2eedde1b3.setIcon(div_icon_b7efce4109be4d12bfbe0df5dc53c923);
+            
+    
+            var marker_d6068144a18a8d215f634aeedac8a619 = L.marker(
+                [5.068, 97.101],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_6e17a131af062d998f43884151715872 = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003eAceh Utara\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_d6068144a18a8d215f634aeedac8a619.setIcon(div_icon_6e17a131af062d998f43884151715872);
+            
+    
+            var marker_378f47c9050d7c99bd1965f06725ef26 = L.marker(
+                [4.637, 97.774],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_bd9a8cf39cb809d434650aa698f2f576 = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003eAceh Timur\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_378f47c9050d7c99bd1965f06725ef26.setIcon(div_icon_bd9a8cf39cb809d434650aa698f2f576);
+            
+    
+            var marker_60ad9ae0a0a6a2d9d3c4c8a961ad4d91 = L.marker(
+                [4.47, 97.968],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_376a9a619891b347b098ab924b0d17e0 = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003eLangsa\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_60ad9ae0a0a6a2d9d3c4c8a961ad4d91.setIcon(div_icon_376a9a619891b347b098ab924b0d17e0);
+            
+    
+            var marker_ac19ee2d729b64b4a011ee48bb650377 = L.marker(
+                [4.176, 97.852],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_84231fbe70855b682e9ef0de9e4e372f = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003eAceh Tamiang\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_ac19ee2d729b64b4a011ee48bb650377.setIcon(div_icon_84231fbe70855b682e9ef0de9e4e372f);
+            
+    
+            var marker_aee7901fdd98a66a3c7eb1ff3c6bd0d8 = L.marker(
+                [3.965, 97.352],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_8760863eb39007be3863e17b3fbe98d7 = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003eGayo Lues\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_aee7901fdd98a66a3c7eb1ff3c6bd0d8.setIcon(div_icon_8760863eb39007be3863e17b3fbe98d7);
+            
+    
+            var marker_0bcc6ccd9e7915afb9a96224a1bf57c0 = L.marker(
+                [4.529, 96.831],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_84d1ab9deaf2c1e8480e340fad62b1db = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003eAceh Tengah\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_0bcc6ccd9e7915afb9a96224a1bf57c0.setIcon(div_icon_84d1ab9deaf2c1e8480e340fad62b1db);
+            
+    
+            var marker_b8e27bdfebb245354da853a841635559 = L.marker(
+                [4.725, 96.852],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_725ebbdd28f7d3bba754d70b06904768 = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003eBener Meriah\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_b8e27bdfebb245354da853a841635559.setIcon(div_icon_725ebbdd28f7d3bba754d70b06904768);
+            
+    
+            var marker_aa024d9cdb9db0eccd71c20a2bee9883 = L.marker(
+                [3.785, 97.648],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_6994934ddd03308450adc50b82faadec = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003eAceh Tenggara\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_aa024d9cdb9db0eccd71c20a2bee9883.setIcon(div_icon_6994934ddd03308450adc50b82faadec);
+            
+    
+            var marker_0dba78437aba68e4c1cfa6c965fbf6a9 = L.marker(
+                [3.124, 97.318],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_abd2161412867f512f0e686253300709 = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003eAceh Selatan\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_0dba78437aba68e4c1cfa6c965fbf6a9.setIcon(div_icon_abd2161412867f512f0e686253300709);
+            
+    
+            var marker_cf3dede0b53efcdd18c689f97883a9bb = L.marker(
+                [4.202, 96.08],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_be9f3291d6c8bc2fdb5c8e4b59f5f15d = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003eAceh Barat\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_cf3dede0b53efcdd18c689f97883a9bb.setIcon(div_icon_be9f3291d6c8bc2fdb5c8e4b59f5f15d);
+            
+    
+            var marker_57f9eca2c5b3b0e4c6a2a23bcdf9cfdf = L.marker(
+                [3.568, 96.832],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_9648b9ea20add3077901cc1dd4344b8d = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003eAceh Barat Daya\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_57f9eca2c5b3b0e4c6a2a23bcdf9cfdf.setIcon(div_icon_9648b9ea20add3077901cc1dd4344b8d);
+            
+    
+            var marker_d36d86ae8f3c5a5a2e438786dc748806 = L.marker(
+                [4.022, 96.369],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_fc0ff41df7be946bcb6a8cbe3467948e = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003eNagan Raya\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_d36d86ae8f3c5a5a2e438786dc748806.setIcon(div_icon_fc0ff41df7be946bcb6a8cbe3467948e);
+            
+    
+            var marker_475c6a627ebaeb857e43008cf56eb2ca = L.marker(
+                [2.681, 96.098],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_bc4fab101b3584412ff1af090d81a5b9 = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003eSimeulue\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_475c6a627ebaeb857e43008cf56eb2ca.setIcon(div_icon_bc4fab101b3584412ff1af090d81a5b9);
+            
+    
+            var marker_77b5cd6db2673b22291300509abbcd00 = L.marker(
+                [2.49, 97.778],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_554549fadd610cb4f77417e1a41d3823 = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003eAceh Singkil\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_77b5cd6db2673b22291300509abbcd00.setIcon(div_icon_554549fadd610cb4f77417e1a41d3823);
+            
+    
+            var marker_b9406d5264f93f480f4e3566c3c4c1a0 = L.marker(
+                [2.656, 98.003],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_4a76c3e021ca7b20c0859ae8b69453ff = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003eSubulussalam\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_b9406d5264f93f480f4e3566c3c4c1a0.setIcon(div_icon_4a76c3e021ca7b20c0859ae8b69453ff);
+            
+    
+            var marker_da8df20ffc4ee0019223b9129ba764e4 = L.marker(
+                [5.14, 96.278],
+                {
+}
+            ).addTo(map_4012607131f9e7c4c7305a4da9b00912);
+        
+    
+            var div_icon_6169b59c98d9053891e16beb57f3334f = L.divIcon({
+  "html": "\u003cdiv style=\"\n                font-size: 9px;\n                color: white;\n                font-weight: bold;\n                text-shadow: 1px 1px 3px black, -1px -1px 3px black;\n                white-space: nowrap;\n                pointer-events: none;\n            \"\u003ePidie Jaya\u003c/div\u003e",
+  "iconSize": [120, 20],
+  "iconAnchor": [60, 10],
+  "className": "empty",
+});
+        
+    
+                marker_da8df20ffc4ee0019223b9129ba764e4.setIcon(div_icon_6169b59c98d9053891e16beb57f3334f);
+            
+</script>
+</html>
